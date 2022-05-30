@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@700&display=swap');
+
+
+body{
+    background-image: url('background.jpg');
+    font-family: 'PT Sans', sans-serif;
+
+}
+
+h3{
+    font-size: 25px !important;
+    background-color: red !important;
+    color: white;
+    outline: none;
+    margin-top: 65px;
+    width: 20%;
+    border: none !important;
+}
+
+button{
+    font-size: 20px !important;
+}
+
+
+canvas{
+    animation-name: example;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    
+}
+
+center{
+    margin-top: -800px;
+}
+@keyframes example{
+    0%{box-shadow: 1px 1px 40px red;}
+    25%{box-shadow: 1px 1px 40px green;}
+    50%{box-shadow: 1px 1px 40px blue;}
+    100%{box-shadow: 1px 1px 40px red;}
+}
+
+
+#filters, #filter{
+    margin-top: 15px;
+    font-size: 20px;
+}
+
+#filters{
+    width: 200px;
+    padding: 5px;
+    color: black;
+    animation-name: rgbfilters;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+#filters option{
+    color: white;
+}
+
+
+@keyframes rgbfilters {
+    0%{background-color: red;}
+    25%{background-color: green;}
+    50%{background-color: blue;}
+    100%{background-color: red;}
+}
+
+.gif{
+    width: 150px;
+    margin-top: 50px;
+    margin-left: 100px;
+
+}
+
+#GIFs{
+    display: inline;
+}
